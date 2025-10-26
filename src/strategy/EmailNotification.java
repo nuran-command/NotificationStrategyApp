@@ -1,8 +1,8 @@
 package strategy;
 
 public class EmailNotification implements NotificationStrategy {
-    private String emailAddress = "user@example.com";
-    private String notificationToEmail = "Email sent to ";
+    String emailAddress = "user@example.com";
+    String notificationToEmail = "Email sent to ";
 
     @Override
     public void send(String message) {

@@ -1,10 +1,11 @@
 package strategy;
 
 public class PushNotification implements NotificationStrategy {
-    private String deviceToken = "device_token_ABC123";
+    String deviceToken = "device_token_ABC123";
+    String notificationToPush = "Push notification to device";
 
     @Override
     public void send(String message) {
-        System.out.println("Push notification to device [" + deviceToken + "]: " + message);
+        System.out.println(notificationToPush + "[" + deviceToken + "]"  + message);
     }
 }
